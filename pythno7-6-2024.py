@@ -111,3 +111,31 @@ male1.work()
 
 
 
+class AB():
+    a=10
+    b=10
+    def sum(self):
+        print("Sum=",self.a +self.b)
+
+    def sub(self):
+        print("sub=",self.a - self.b)
+
+    def mul(self):
+        print("mul=",self.a * self.b)
+
+    def div(self):
+        print("div=",self.a / self.b)
+
+    
+x=AB()
+print(x.a)
+print(x.b)
+print(type(x))
+x.sum()
+
+y=AB()
+y.a=20
+y.b=30
+y.sum()
+
+
