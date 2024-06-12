@@ -33,6 +33,7 @@ root.mainloop()
 
 '''
 
+'''
 root=Tk()
 
 def qwerty():
@@ -43,6 +44,8 @@ mybutton=Button(root,text="click",command=qwerty)
 mybutton.pack()
 
 root.mainloop()
+'''
+
 '''
 from tkinter import *
 
@@ -77,6 +80,39 @@ v = IntVar()
 Radiobutton(root, text='GfG', variable=v, value=1).pack(anchor=W)
 Radiobutton(root, text='MIT', variable=v, value=2).pack(anchor=W)
 mainloop()
+
+'''
+
+'''
+root=Tk()
+
+root.title("enter your name")
+
+e=Entry(root,width=35,borderwidth=5)
+
+def qwerty():
+
+    name =e.get()
+    w=Label(root,text=f"{name}")
+    w.pack()
+
+
+mybutton=Button(root,text="click",command=qwerty)
+mybutton.pack()
+
+root.mainloop()
+'''
+
+'''
+top = Tk()  
+  
+top.geometry("200x100")  
+  
+b = Button(top,text = "Simple")  
+  
+b.pack()  
+
+top.mainloop()
 
 '''
 
