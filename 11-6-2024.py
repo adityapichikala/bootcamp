@@ -115,4 +115,30 @@ b.pack()
 top.mainloop()
 
 '''
+'''
+root=Tk()
 
+e=Entry(root,width=30)
+e.pack()
+
+def qwerty():
+    w=Label(root,text=e.get())
+    w.pack()
+
+mybut=Button(root,text="enter your name",command=qwerty)
+mybut.pack()
+
+root.mainloop()
+
+'''
+
+root=Tk()
+root.title("frames")
+
+frames=LabelFrame(root,text="this is a frame",padx=5,pady=5)
+frames.pack()
+
+w=Button(frames,text="click here")
+w.pack()
+
+root.mainloop()
