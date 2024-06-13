@@ -139,6 +139,7 @@ frames=LabelFrame(root,text="this is a frame",padx=5,pady=5)
 frames.pack()
 
 w=Button(frames,text="click here")
+w.place(relx=0.5,rely=0.5,anchor=CENTER)
 w.pack()
 
 root.mainloop()
