@@ -8,10 +8,10 @@ import mysql.connector
 
 data=mysql.connector.connect(host="localhost",user="root",password="171119@aditya",database="demo")
 
-print(data)
+#print(data)
 
 mycursor=data.cursor()
-
+  
 #mycursor.execute("create database demo")
 
 '''
@@ -22,10 +22,18 @@ for x in mycursor:
 
 '''
 
-#mycursor.execute("create table hello(helloid int primary key auto_increment,helloname varchar(40) not null,helloph int not null)")
-sql="insert into hello(helloname,helloph)values(%s,%i)"
-values=("aditya",9494699433)
+#mycursor.execute("create table student(sid int primary key auto_increment,sname varchar(30) not null,age int(2) not null)")
+
+#sql="insert into student(sname,age) values (%s,%s)"
+#values=("aditya",18)
 
 #mycursor.execute("drop table hello")
 
-mycursor.execute(sql,values)
+#mycursor.execute(sql,values)
+#data.commit()
+
+
+mycursor.execute("select * from student")
+qwe=mycursor.fetchall()
+for x in    qwe:
+    print(x)
