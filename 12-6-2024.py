@@ -17,7 +17,6 @@ widet.bind("<Button-1>",qwerty)
 widet.bind("<Double-1>",quit)
 
 root.mainloop()
-
 '''
 
 '''
@@ -104,7 +103,7 @@ canvas = Canvas(root, width=400, height=300, bg="blue")
 canvas.pack()
 root.mainloop()
 '''
-
+'''
 root=Tk()
 root.title("checkbox")
 root.geometry("400x400")
@@ -117,5 +116,17 @@ c=Checkbutton(root,text="male",variable=a)
 c.pack()
 
 but=Button(root,text="show",command=show).pack()
+
+root.mainloop()
+'''
+
+import tkinter as tk
+from tkinter import ttk
+
+root = tk.Tk()
+root.title("Tkinter Test")
+
+label = ttk.Label(root, text="Hello, Tkinter!")
+label.pack()
 
 root.mainloop()
