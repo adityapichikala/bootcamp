@@ -19,3 +19,109 @@ Integration with Other Libraries: NumPy seamlessly integrates with other librari
 import numpy as np
 a=np.array([[1,2,3],[2,3,4]])
 print(a)
+
+
+import numpy as n
+a=n.array([[1,2,3]])
+print(a.shape)
+
+
+import numpy as np
+a=np.array([1,2,3,4,5,6])
+print(a.reshape(2,3))
+
+
+import numpy as np
+a=np.array([[1,2,3,4],[9,6,7,8]])
+print(a.reshape(1,8))
+
+
+import numpy as np
+a=np.array([1,2,3,4,5,6])
+for x in a:
+  print(x)
+
+
+import numpy as np
+a=np.array([[1,2,3],[4,5,6]])
+for x in a:
+  print(x)
+
+
+import numpy as np
+a=np.array([[1,2,3],[4,5,6],[7,8,9]])
+for x  in a:
+  for y in x:
+    print(y)
+
+
+import numpy as np
+
+a = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
+
+for x in np.nditer(a):
+  print(x)
+
+
+
+import numpy as np
+a=np.array([1,2,3])
+b=np.array([4,5,6])
+x=np.concatenate((a,b))
+print(x)
+
+
+
+import numpy as np
+a=np.array([1,2,3])
+b=np.array([4,5,6])
+c=np.array([7,8,9])
+y=np.concatenate((a,b,c))
+x=np.stack((a,b,c),axis=1)
+print(x)
+print(y)
+
+
+import numpy as np
+
+arr1 = np.array([1, 2, 3])
+
+arr2 = np.array([4, 5, 6])
+arr3= np.array([7,8,9])
+
+arr = np.vstack((arr1, arr2,arr3))
+
+x=np.stack((arr1,arr2,arr3),axis=1)
+print(arr)
+print(x)
+print(np.add(arr,x))
+
+
+
+
+import numpy as np
+a=np.array([1,2,3,4])
+b=np.array([5,6,7,8])
+
+a1=np.stack((a,b),axis=1)
+a2=np.hstack((a,b)) #row
+a3=np.vstack((a,b)) #coloums
+a4=np.dstack((a,b)) #height
+print(a1)
+print(a2)
+print(a3)
+print(a4)
+
+
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5, 6])
+
+newarr = np.array_split(arr, 4)
+
+print(newarr)
+print(newarr[0])
+print(newarr[1])
+print(newarr[2])
+print(newarr[3])
+
