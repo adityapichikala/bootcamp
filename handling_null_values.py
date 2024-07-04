@@ -20,6 +20,11 @@ x=pd.read_csv("C:/Users/Kumari/OneDrive/Desktop/coding/titanic_train.csv")
 #print(x1.isnull().sum())
 
 
-
-x2=x.fillna(method="pad")
+'''
+x2=x.fillna(method="pad")#it gives values tot he null values from the above row 
 print(x2)
+
+'''
+
+x3=x.fillna(method="bfill")
+print(x3)
